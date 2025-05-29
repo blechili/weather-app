@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('PATH_TO_BACKGROUND_IMAGE.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+
+
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(173, 216, 230, 0.95);
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #004e7c;
+  margin: 0;
+}
+
+.main-content {
+  padding: 2rem;
+}
+
+.brand-description {
+  background-color: rgba(0, 75, 145, 0.6);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.brand-description h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.brand-description p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.shoe-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.shoe-img {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  color: black;
+}
+
+.interactive-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media(min-width: 768px) {
+  .interactive-boxes {
+    flex-direction: row;
+  }
+}
+
+.hover-box {
+  flex: 1;
+  background-color: rgba(70, 130, 180, 0.8);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.hover-box:hover {
+  transform: scale(1.05);
+}
